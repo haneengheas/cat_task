@@ -109,7 +109,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     ),
                     InternationalPhoneNumberInput(
                       hintText: 'Phone ',
-                      initialValue: PhoneNumber(isoCode: '+20'),
+
                       validator: (val) {
                         if (val!.isEmpty) {
                           return 'please enter your mobile';
@@ -125,6 +125,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       keyboardType: TextInputType.phone,
                       onInputChanged: (PhoneNumber phone) {
                         _userData.phoneNum = phone;
+                        _userData.keunum= phone.isoCode!;
                         print(_userData.phoneNum);
                       },
                       ignoreBlank: false,

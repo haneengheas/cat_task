@@ -7,13 +7,14 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserData {
-  String? name, password,confirmPass , email;
+  String? name, password,confirmPass , email, keunum;
   PhoneNumber? phoneNum;
   UserData({
     this.email,
     this.name,
     this.phoneNum,
     this.password,
+    this.keunum,
     this.confirmPass,
   });
   saveData(
