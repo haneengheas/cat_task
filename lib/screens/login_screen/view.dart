@@ -59,7 +59,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     if (val.toString().isEmpty) {
                       return 'please enter your email Id';
                     }
-                  }),
+                  }
+                  ),
               const SizedBox(
                 height: 20,
               ),
